@@ -1,0 +1,9 @@
+192.168.124.179 - Self - 0.02ms
+212.128.255.129 - f-l3208-pc01 - Not Received
+8.8.8.8 - Google - 6ms
+142.250.184.174 - Google - 5ms
+10.1.128.39 - Mobile - Not Received
+212.128.240.50 - Urjc.es - 9ms
+140.82.121.4 - Github.com - 34ms
+185.15.58.224 - Wikipedia.org - 36ms
+203.209.197.14 - newdomain.com.au - Not Received
