@@ -3,8 +3,9 @@ from client import Client
 SERVER_IP = "127.0.0.1"
 SERVER_PORT = 8080
 N = 5
+
 sequence = "ACCTCCTCTCCAGCAATGCCAACCCCAGTCCAGGCCCCCATCCGCCCAGGATCTCGATCA"
-genes = ["U5", "ADA", "FRAT1", "FXN", "RNU6_269P"]
+genes = ["U5", "ADA", "FRAT1", "FXN", "RNU6_269P"] #list to iterate through in a loop
 print("-----| Practice 3, Exercise 7 |------")
 
 c = Client(SERVER_IP, SERVER_PORT)

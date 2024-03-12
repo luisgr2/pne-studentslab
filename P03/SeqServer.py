@@ -54,6 +54,7 @@ try:
             filename = os.path.join("sequences", gene + ".txt")
             s.read_fasta(filename)
             response = str(s)
+        #añadiremos mas opciones al servidor de la misma forma
 
 
         print(response)

@@ -11,6 +11,7 @@ class Client:
 
     def ping(self):
         print("OK")
+        #static function
 
     def talk(self, msg):
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

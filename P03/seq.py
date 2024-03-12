@@ -26,6 +26,7 @@ class Seq:
 
     def __str__(self):
         return self.strbases
+    #in string format
 
     def len(self):
         if self.strbases == "NULL" or self.strbases == "ERROR":
