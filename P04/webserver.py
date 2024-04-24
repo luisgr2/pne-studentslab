@@ -20,7 +20,11 @@ def process_client(client_socket):
         resource = slices[1]
         version = slices[2]
 
-        if resource == "/info/A":
+        if resource == "/":
+            file_name = os.path.join("html", "index.html")
+            body = Path(file_name).read_text()
+            status_line = "HTTP/1.1 200 OK\n"
+        elif resource == "/info/A":
             file_name = os.path.join("html","info", "A.html")
             body = Path(file_name).read_text()
             status_line = "HTTP/1.1 200 OK\n"
@@ -28,8 +32,16 @@ def process_client(client_socket):
             file_name = os.path.join("html","info", "C.html")
             body = Path(file_name).read_text()
             status_line = "HTTP/1.1 200 OK\n"
+        elif resource == "/info/G":
+            file_name = os.path.join("html","info", "G.html")
+            body = Path(file_name).read_text()
+            status_line = "HTTP/1.1 200 OK\n"
+        elif resource == "/info/T":
+            file_name = os.path.join("html","info", "T.html")
+            body = Path(file_name).read_text()
+            status_line = "HTTP/1.1 200 OK\n"
         else:
-            file_name = os.path.join("html", "index.html")
+            file_name = os.path.join("html", "error.html")
             body = Path(file_name).read_text()
             status_line = "HTTP/1.1 404 Not_found\n"
         header = "Content-Type: text/html\n"

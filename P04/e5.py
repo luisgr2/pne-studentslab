@@ -28,8 +28,16 @@ def process_client(client_socket):
             file_name = os.path.join("html","info", "C.html")
             body = Path(file_name).read_text()
             status_line = "HTTP/1.1 200 OK\n"
+        elif resource == "/info/G":
+            file_name = os.path.join("html","info", "G.html")
+            body = Path(file_name).read_text()
+            status_line = "HTTP/1.1 200 OK\n"
+        elif resource == "/info/T":
+            file_name = os.path.join("html","info", "T.html")
+            body = Path(file_name).read_text()
+            status_line = "HTTP/1.1 200 OK\n"
         else:
-            file_name = os.path.join("html", "index.html")
+            file_name = os.path.join("html", "error.html")
             body = Path(file_name).read_text()
             status_line = "HTTP/1.1 404 Not_found\n"
         header = "Content-Type: text/html\n"

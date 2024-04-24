@@ -21,11 +21,19 @@ def process_client(client_socket):
         version = slices[2]
 
         if resource == "/info/A":
-            file_name = os.path.join("html","info", "A.html")
+            file_name = os.path.join("html","info" "A.html")
             body = Path(file_name).read_text()
             status_line = "HTTP/1.1 200 OK\n"
         elif resource == "/info/C":
             file_name = os.path.join("html","info", "C.html")
+            body = Path(file_name).read_text()
+            status_line = "HTTP/1.1 200 OK\n"
+        elif resource == "/info/G":
+            file_name = os.path.join("html","info", "G.html")
+            body = Path(file_name).read_text()
+            status_line = "HTTP/1.1 200 OK\n"
+        elif resource == "/info/T":
+            file_name = os.path.join("html","info", "T.html")
             body = Path(file_name).read_text()
             status_line = "HTTP/1.1 200 OK\n"
         else:

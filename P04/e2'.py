@@ -24,10 +24,6 @@ def process_client(client_socket):
             file_name = os.path.join("html","info", "A.html")
             body = Path(file_name).read_text()
             status_line = "HTTP/1.1 200 OK\n"
-        elif resource == "/info/C":
-            file_name = os.path.join("html","info", "C.html")
-            body = Path(file_name).read_text()
-            status_line = "HTTP/1.1 200 OK\n"
         else:
             file_name = os.path.join("html", "index.html")
             body = Path(file_name).read_text()
