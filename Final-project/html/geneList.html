@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gene List</title>
+    </head>
+    <body style="background-color: lightblue;">
+        <b>List of genes in the chromosome:</b>
+    <ul>
+        {% for e in context.genes %}
+        <li>{{e}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
